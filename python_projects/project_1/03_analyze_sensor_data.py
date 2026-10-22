@@ -17,7 +17,7 @@ std_val = temperatures.std()
 # 4. Output the results clearly
 print("--- Sensor Data Statistical Analysis ---")
 print(f"Mean (Average):     {mean_val:.2f}°C")
-print(f"Median:             {mean_val:.2f}°C")
+print(f"Median:             {median_val:.2f}°C")
 print(f"Minimum:            {min_val:.2f}°C")
 print(f"Maximum:            {max_val:.2f}°C")
 print(f"Standard Deviation: {std_val:.2f}°C")
