@@ -12,7 +12,7 @@ module tb_nor_gate;
     .out(out_sig)
   );
   
-  // 3. Truth table verification
+  // 3. Truth table verification for NOR
   initial begin
     $display("------------------");
     $display("Time | A | B | Out");
@@ -20,19 +20,19 @@ module tb_nor_gate;
     
     // Combination 00
     a_sig = 1'b0; b_sig = 1'b0; #10;
-    $display("%0t  | %b | %b | %b", $time, a_sig, b_sig, out_sig);
+    $display("%0t   | %b | %b | %b", $time, a_sig, b_sig, out_sig);
     
     // Combination 01
     a_sig = 1'b0; b_sig = 1'b1; #10;
-    $display("%0t  | %b | %b | %b", $time, a_sig, b_sig, out_sig);
+    $display("%0t   | %b | %b | %b", $time, a_sig, b_sig, out_sig);
     
     // Combination 10
     a_sig = 1'b1; b_sig = 1'b0; #10;
-    $display("%0t  | %b | %b | %b", $time, a_sig, b_sig, out_sig);
+    $display("%0t   | %b | %b | %b", $time, a_sig, b_sig, out_sig);
     
     // Combination 11
     a_sig = 1'b1; b_sig = 1'b1; #10;
-    $display("%0t  | %b | %b | %b", $time, a_sig, b_sig, out_sig);
+    $display("%0t   | %b | %b | %b", $time, a_sig, b_sig, out_sig);
     
     $display("------------------");
     $finish;
